@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.layout.*?>
+<?import java.lang.*?>
+<?import javafx.scene.control.*?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="170.0" prefWidth="280.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="RadioButtonDemoController">
+   <children>
+      <RadioButton fx:id="veganRadioButton" layoutX="97.0" layoutY="30.0" mnemonicParsing="false" selected="true" text="Vegan">
+         <toggleGroup>
+            <ToggleGroup fx:id="ToggleGroupForCodeListing" />
+         </toggleGroup>
+      </RadioButton>
+      <RadioButton fx:id="vegetarianRadioButton" layoutX="97.0" layoutY="58.0" mnemonicParsing="false" text="Vegetarian" toggleGroup="$ToggleGroupForCodeListing" />
+      <RadioButton fx:id="carnivoreRadioButton" layoutX="97.0" layoutY="85.0" mnemonicParsing="false" text="Carnivore" toggleGroup="$ToggleGroupForCodeListing" />
+      <Button fx:id="showChoiceButton" layoutX="98.0" layoutY="131.0" mnemonicParsing="false" onAction="#showChoiceListener" text="Show Choice" />
+      <Label fx:id="outputLabel" layoutX="27.0" layoutY="114.0" prefHeight="17.0" prefWidth="224.0" />
+   </children>
+</AnchorPane>

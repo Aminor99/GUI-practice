@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="157.0" prefWidth="280.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="checkBoxOfLovinController">
+   <children>
+      <CheckBox fx:id="checkBox" layoutX="25.0" layoutY="40.0" mnemonicParsing="false" onAction="#checkBoxListener" prefHeight="30.0" prefWidth="230.0" selected="true" text="Check this box if you love Dr.Hatley!" AnchorPane.bottomAnchor="123.0" AnchorPane.leftAnchor="25.0" AnchorPane.rightAnchor="25.0" AnchorPane.topAnchor="40.0">
+         <rotationAxis>
+            <Point3D />
+         </rotationAxis>
+      </CheckBox>
+      <Label fx:id="outputLabel" layoutX="43.0" layoutY="67.0" prefHeight="56.0" prefWidth="195.0" />
+   </children>
+</AnchorPane>

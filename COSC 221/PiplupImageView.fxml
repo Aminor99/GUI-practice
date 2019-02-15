@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.image.*?>
+<?import javafx.scene.control.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="279.0" prefWidth="220.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="PiplupImageViewController">
+   <children>
+      <Label layoutX="61.0" layoutY="223.0" prefHeight="17.0" prefWidth="99.0" text="Choose an Image!" />
+      <ImageView fx:id="piplupImage" fitHeight="200.0" fitWidth="200.0" layoutX="10.0" layoutY="14.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../../Pictures/PIPLUPS/I%20LOVE%20HIM.png" />
+         </image>
+      </ImageView>
+      <RadioButton fx:id="piplupButton1" layoutX="14.0" layoutY="240.0" mnemonicParsing="false" onAction="#piplup1ButtonListener" selected="true" text="Piplup 1">
+         <toggleGroup>
+            <ToggleGroup fx:id="piplupToggleGroup" />
+         </toggleGroup>
+      </RadioButton>
+      <RadioButton fx:id="piplupButton2" layoutX="128.0" layoutY="240.0" mnemonicParsing="false" onAction="#piplup2ButtonListener" text="Piplup 2" toggleGroup="$piplupToggleGroup" />
+   </children>
+</AnchorPane>

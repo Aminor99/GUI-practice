@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="209.0" prefWidth="328.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="FaveFoodQuestionController">
+   <children>
+      <Label layoutX="45.0" layoutY="6.0" prefHeight="17.0" prefWidth="238.0" text="See what your favorite food says about you!" />
+      <RadioButton fx:id="spicyButton" layoutX="54.0" layoutY="32.0" mnemonicParsing="false" onAction="#spicyListener" selected="true" text="Spicy Food">
+         <toggleGroup>
+            <ToggleGroup fx:id="FaveFoodToggle" />
+         </toggleGroup>
+      </RadioButton>
+      <RadioButton fx:id="sourButton" layoutX="165.0" layoutY="32.0" mnemonicParsing="false" onAction="#sourListener" text="Sour Food" toggleGroup="$FaveFoodToggle" />
+      <RadioButton fx:id="newButton" layoutX="53.0" layoutY="66.0" mnemonicParsing="false" onAction="#newListener" text="New Foods" toggleGroup="$FaveFoodToggle" />
+      <RadioButton fx:id="sweetButton" layoutX="165.0" layoutY="66.0" mnemonicParsing="false" onAction="#sweetListener" text="Sweet Food" toggleGroup="$FaveFoodToggle" />
+      <RadioButton fx:id="savoryButton" layoutX="54.0" layoutY="96.0" mnemonicParsing="false" onAction="#savoryListener" text="Savory Food" toggleGroup="$FaveFoodToggle" />
+      <RadioButton fx:id="fruitsVeggiesButton" layoutX="165.0" layoutY="96.0" mnemonicParsing="false" onAction="#fruiAndVeggiesListener" text="Fruits and Veggies" toggleGroup="$FaveFoodToggle" />
+      <Label fx:id="outputPersonality" layoutX="54.0" layoutY="135.0" prefHeight="46.0" prefWidth="221.0" />
+   </children>
+</AnchorPane>

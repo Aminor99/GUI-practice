@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="150.0" prefWidth="224.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="checkBoxOfSuccessController">
+   <children>
+      <CheckBox fx:id="checkBox" layoutX="4.0" layoutY="31.0" mnemonicParsing="false" prefHeight="36.0" prefWidth="217.0" selected="true" text="Click the box if you wanna succeed" />
+      <Label fx:id="outputLabel" layoutX="13.0" layoutY="57.0" prefHeight="36.0" prefWidth="184.0" />
+      <Button fx:id="okButton" layoutX="88.0" layoutY="102.0" mnemonicParsing="false" onAction="#okButtonListener" text="OK" />
+   </children>
+</AnchorPane>
